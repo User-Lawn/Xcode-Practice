@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func Click_Move(_ sender: Any) {
-        print("Hellow")
+        print("Hellow wow")
     }
     
 }
