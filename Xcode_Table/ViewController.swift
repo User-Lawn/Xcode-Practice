@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         print("CLICK !!! \(indexPath.row)")
+        //클릭이벤트
     }
     override func viewDidLoad() {
         super.viewDidLoad()
