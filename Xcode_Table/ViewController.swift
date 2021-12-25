@@ -19,15 +19,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //무엇? 반복 10번?
         //임의의 셀 만들기
-        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "TableCellType1")
+       // let cell = UITableViewCell.init(style: .default, reuseIdentifier: "TableCellType1")
         
-        cell.textLabel?.text = "\(indexPath.row)"
+        let cell = TableView_Main.dequeueReusableCell(withIdentifier: "Type1", for: indexPath) as! Type1
+        //순번에 해당하는 셀을 만나면 Type1을 TableView에 넣어라!
+        //as? as! 부모와 자식으 친자확인 또는 강제 친자로 바꿈
         
+        cell.LabelText.text = "\(indexPath.row)"
+        //cell.textLabel?.text = "\(indexPath.row)"
+        
+    
         return cell
         
     }
     
-
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        print("CLICK !!! \(indexPath.row)")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
