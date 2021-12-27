@@ -82,6 +82,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         print("CLICK !!! \(indexPath.row)")
         //클릭이벤트
     }
+    //1. 디테일 상세화면 만들기
+    //2. 값을 보내기
+    //3. 값 셋팅후 화면이동
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
