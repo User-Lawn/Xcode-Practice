@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         //2. url > request
         //3. req > load
         
-        let urlString = "https://www.google.com"
+        let urlString = "https://developeracademy.postech.ac.kr/ko/"
         if let url = URL(string: urlString) {
             //?는 값이 들어있을수도 있다는 뜻
             //unwraping 과정이다.
