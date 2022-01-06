@@ -8,14 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var randomValue: Int = 0
+    var tryCount: Int = 0
     
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var tryCountLabel: UILabel!
+    @IBOutlet weak var sliderValueLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        slider.setThumbImage(Image Literal, for: .normal)
+        reset()
     }
 
     @IBAction func slideerValueChanged(_ sender: UISlider) {
@@ -26,7 +29,12 @@ class ViewController: UIViewController {
     }
     @IBAction func touchUpResetButton(_ sender: UIButton) {
         print("touch up reset button")
-        
+        reset()
     }
+    func reset() {
+        print("reset!")
+    }
+
 }
+
 

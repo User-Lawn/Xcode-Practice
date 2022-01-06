@@ -75,8 +75,8 @@
                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSz-VJ-LyG">
-                                <rect key="frame" x="455" y="166" width="16" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSz-VJ-LyG">
+                                <rect key="frame" x="455" y="166" width="38" height="17"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                 <nil key="highlightedColor"/>
@@ -119,6 +119,8 @@
                     </view>
                     <connections>
                         <outlet property="slider" destination="Gg2-yN-eW6" id="x4o-YL-GQ4"/>
+                        <outlet property="sliderValueLabel" destination="OSz-VJ-LyG" id="Y0d-8a-zi7"/>
+                        <outlet property="tryCountLabel" destination="PGh-Lw-bt8" id="WQx-nW-UYZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
