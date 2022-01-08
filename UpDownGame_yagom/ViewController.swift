@@ -35,6 +35,17 @@ class ViewController: UIViewController {
     }
     func reset() {
         print("reset!")
+        randomValue = Int.random(in: 0...30)
+        print(randomValue)
+        
+        tryCount = 0
+        tryCountLabel.text = "0 / 5"
+        slider.minimumValue = 0
+        slider.maximumValue = 30
+        slider.value = 15
+        minimumValueLabel.text = "0"
+        maximumValueLabel.text = "30"
+        sliderValueLabel.text = "15"
     }
 
 }
