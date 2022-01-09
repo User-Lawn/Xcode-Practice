@@ -25,9 +25,13 @@ class ViewController: UIViewController {
 
     @IBAction func slideerValueChanged(_ sender: UISlider) {
         print(sender.value)
+        let integerValue: Int = Int(sender.value)
+        sliderValueLabel.text = String(sender.value)
     }
     @IBAction func touchUpHitButton(_ sender: UIButton) {
         print(slider.value)
+        let hitValue: Int = Int(slider.value)
+        slider.value = Float(hitValue)
     }
     @IBAction func touchUpResetButton(_ sender: UIButton) {
         print("touch up reset button")
